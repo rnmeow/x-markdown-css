@@ -1,4 +1,2 @@
-dist/
 .env.local
-
 node_modules/
