@@ -25,8 +25,8 @@ jobs:
       # Step IV
       - name: Publish to NPM Registry
         uses: JS-DevTools/npm-publish@v1
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
       # Step V
       - name: Generate Changelog
         run: npx changelogithub@0.12
