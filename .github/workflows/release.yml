@@ -17,17 +17,22 @@ jobs:
         with:
           fetch-depth: 0
       # Step II
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      # Step III
       - name: Install Dependencies
         run: npm ci
-      # Step III
+      # Step IV
       - name: Build Project
         run: npm run build
-      # Step IV
+      # Step V
       - name: Publish to NPM Registry
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-      # Step V
+      # Step VI
       - name: Generate Changelog
         run: npx changelogithub@0.12
         env:
