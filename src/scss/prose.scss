@@ -2,6 +2,7 @@
 
 .markdown-body,
 .prose {
+  @extend %container;
   @import '_partial/title';
   @import '_partial/text';
   @import '_partial/link';
