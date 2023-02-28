@@ -1,7 +1,21 @@
 {
   "name": "x-markdown-css",
-  "version": "0.0.0-20230228.3",
+  "version": "0.0.0-20230228.5",
   "description": "A simple and customizable Markdown CSS for everyone.",
+  "keywords": [
+    "markdown",
+    "css",
+    "sass",
+    "scss",
+    "coffeescript",
+    "grunt",
+    "javascript",
+    "postcss",
+    "prose",
+    "blog",
+    "article",
+    "documentation"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
