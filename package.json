@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/kuohuanhuan/x-markdown-css#readme",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "build": "grunt build",
