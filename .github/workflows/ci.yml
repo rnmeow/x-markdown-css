@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  # Test Lint
+  lint:
+    # Use Ubuntu 22.04
+    runs-on: ubuntu-22.04
+    steps:
+      # Step I
+      - name: Get Source Code
+        uses: actions/checkout@v3
+      # Step II
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      # Step IV
+      - name: Install Dependencies
+        run: npm ci
+      # Step V
+      - name: Lint
+        run: npm run lint
+  # Test Build
+  build:
+    # Use Ubuntu Linux, Windows and OS X
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [ 16, 18, latest ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+      fail-fast: false
+    steps:
+      # Step I
+      - name: Get Source Code
+        uses: actions/checkout@v3
+      # Step II
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+      # Step III
+      - name: Install Dependencies
+        run: npm ci
+      # Step IV
+      - name: Test Build
+        run: npm run build
