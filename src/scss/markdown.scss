@@ -67,17 +67,11 @@
     margin-top: 1rem;
   }
 }
-.dark {
-  .shiki-light {
-    display: none;
-  }
+.dark .shiki-light {
+  display: none;
 }
-html {
-  &:not(.dark) {
-    .shiki-dark {
-      display: none;
-    }
-  }
+html:not(.dark) .shiki-dark {
+  display: none;
 }
 .item {
   text-decoration: none;
@@ -103,72 +97,13 @@ html {
     text-decoration: none;
   }
 }
-h1 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-  &:focus {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-}
-h2 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-  &:focus {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-}
-h3 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-  &:focus {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-}
-h4 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-  &:focus {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-}
-h5 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-  &:focus {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  &:hover {
-    .header-anchor {
-      opacity: .5;
-    }
-  }
+  &:hover,
   &:focus {
     .header-anchor {
       opacity: .5;
