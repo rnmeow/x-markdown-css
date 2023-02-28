@@ -1,4 +1,4 @@
-name: Release
+name: Build and Release
 
 on:
   push:
@@ -17,11 +17,17 @@ jobs:
         with:
           fetch-depth: 0
       # Step II
+      - name: Install Dependencies
+        run: npm ci
+      # Step III
+      - name: Build Project
+        run: npm run build
+      # Step IV
       - name: Publish to NPM Registry
-        run: pnpm ci:publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # Step III
+      # Step V
       - name: Generate Changelog
         run: npx changelogithub@0.12
         env:
