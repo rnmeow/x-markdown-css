@@ -1,0 +1,14 @@
+figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  figcaption {
+    margin-top: .8571rem;
+    font-size: .875rem;
+    color: var(--xm-c-figcaption);
+    line-height: 1.4286;
+  }
+  > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

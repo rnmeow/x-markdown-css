@@ -1,0 +1,13 @@
+.markdown-body,
+.prose {
+  max-width: fit-content;
+  font-size: 1rem;
+  color: var(--xm-c-general);
+  line-height: 1.75;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

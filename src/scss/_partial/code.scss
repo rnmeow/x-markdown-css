@@ -1,0 +1,35 @@
+code {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--xm-c-dark);
+  &::before, &::after {
+    content: '`';
+  }
+}
+pre {
+  overflow-x: auto;
+  margin-top: 1.7143rem;
+  padding-top: .8571rem, 1.1429rem;
+  font-size: .875rem;
+  color: var(--xm-c-pre);
+  line-height: 1.7143;
+  margin-bottom: 1.7143rem;
+  border-radius: .375rem;
+  code {
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    color: inherit;
+    background: transparent;
+    border-width: 0;
+    border-radius: 0;
+    line-height: inherit;
+    &::before {
+      content: none;
+    }
+    &::after {
+      content: none;
+    }
+  }
+}

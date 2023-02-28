@@ -1,0 +1,20 @@
+blockquote,
+q {
+  margin-top: 1.6rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: inherit;
+  border-color: var(--xm-c-blockquote-color);
+  border-left-width: .25rem;
+  quotes: '\201C''\201D''\2018''\2019';
+  margin-bottom: 1.6rem;
+  p {
+    &:first-of-type::before {
+      content: open-quote;
+    }
+    &:last-of-type::after {
+      content: close-quote;
+    }
+  }
+}
