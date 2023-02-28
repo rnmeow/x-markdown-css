@@ -24,7 +24,7 @@ jobs:
         run: npm run build
       # Step IV
       - name: Publish to NPM Registry
-        run: npm publish
+        uses: JS-DevTools/npm-publish@v1
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Step V
