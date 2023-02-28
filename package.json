@@ -1,0 +1,35 @@
+{
+  "name": "x-markdown-css",
+  "version": "0.0.0-dev",
+  "description": "A simple and customizable Markdown CSS for everyone.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuohuanhuan/x-markdown-css.git"
+  },
+  "author": "kuohuanhuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuohuanhuan/x-markdown-css/issues"
+  },
+  "homepage": "https://github.com/kuohuanhuan/x-markdown-css#readme",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "grunt build"
+  },
+  "dependencies": {
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.4.13",
+    "coffeescript": "^2.7.0",
+    "cssnano": "^5.1.15",
+    "grunt": "^1.6.1",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "postcss": "^8.4.21"
+  }
+}

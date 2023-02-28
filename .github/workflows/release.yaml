@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  # NPM Registry Release
+  release:
+    # Use Ubuntu 22.04
+    runs-on: ubuntu-22.04
+    steps:
+      # Step I
+      - name: Get Source Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # Step II
+      - name: Publish to NPM Registry
+        run: pnpm ci:publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Step III
+      - name: Generate Changelog
+        run: npx changelogithub@0.12
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,44 @@
+module.exports = (grunt) ->
+  require('load-grunt-tasks')(grunt)
+
+  grunt.initConfig(
+    # NPM Package Declare
+    pkg: grunt.file.readJSON('package.json')
+    # Sass Compile
+    sass:
+      options:
+        implementation: require('sass')
+      exp:
+        options:
+          outputStyle: 'expanded'
+        files:
+          'dist/bundle.css': 'src/index.scss'
+      min:
+        options:
+          outputStyle: 'compressed'
+        files:
+          'dist/bundle.min.css': 'src/index.scss'
+    # PostCSS Process
+    postcss:
+      options:
+        map:
+          inline: false
+          annotation: 'dist/'
+      exp:
+        options:
+          processors: [require('autoprefixer')()]
+        src: 'dist/bundle.css'
+        dest: 'dist/bundle.css'
+      min:
+        options:
+          processors: [
+            require('autoprefixer')()
+            require('cssnano')(
+              preset: 'default'
+            )
+          ]
+        src: 'dist/bundle.min.css'
+        dest: 'dist/bundle.min.css'
+  )
+
+  grunt.registerTask('build', ['sass', 'postcss'])

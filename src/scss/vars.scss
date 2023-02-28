@@ -1,0 +1,25 @@
+@use 'sass:meta' as *;
+
+@use '_vars/constants';
+@use '_vars/colors';
+@use '_vars/light';
+@use '_vars/dark';
+
+:root {
+  @each $name, $val in module-variables('constants') {
+    --xm-#{$name}: #{$val};
+  }
+  @each $name, $val in module-variables('colors') {
+    --xm-c-#{$name}: #{$val};
+  }
+}
+.markdown-body {
+  @each $name, $val in module-variables('light') {
+    --xm-c-#{$name}: #{$val};
+  }
+}
+.dark .markdown-body {
+  @each $name, $val in module-variables('dark') {
+    --xm-c-#{$name}: #{$val};
+  }
+}
