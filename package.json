@@ -32,7 +32,9 @@
   },
   "scripts": {
     "build": "grunt build",
-    "bump": "bumpp"
+    "bump": "bumpp",
+    "lint": "stylelint **/*.scss --config .stylelintrc",
+    "lint:fix": "stylelint **/*.scss --config .stylelintrc --fix"
   },
   "dependencies": {
     "coffeescript": "^2.7.0",
@@ -46,6 +48,10 @@
     "grunt": "^1.6.1",
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.21",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
   }
 }
