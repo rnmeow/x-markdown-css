@@ -1,4 +1,5 @@
 {
+  "ignoreDisables": true,
   "extends": "stylelint-config-standard-scss",
   "plugins": [
     "stylelint-scss",
