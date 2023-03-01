@@ -1,5 +1,5 @@
 code {
-  font-size: .875rem;
+  font-size: .85rem;
   font-weight: 600;
   color: var(--xm-c-dark);
   &::before, &::after {
@@ -8,12 +8,12 @@ code {
 }
 pre {
   overflow-x: auto;
-  margin-top: 1.7143rem;
-  padding-top: .8571rem, 1.1429rem;
-  font-size: .875rem;
+  margin-top: 1.75rem;
+  padding-top: .85rem, 1.15rem;
+  font-size: .85rem;
   color: var(--xm-c-pre);
-  line-height: 1.7143;
-  margin-bottom: 1.7143rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
   border-radius: .375rem;
   code {
     padding: 0;

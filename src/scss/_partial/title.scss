@@ -4,7 +4,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 800;
   color: var(--xm-c-darker);
-  line-height: 1.1111;
+  line-height: 1.15;
 }
 h2 {
   margin-top: 2rem;
@@ -12,9 +12,9 @@ h2 {
   font-weight: 700;
   color: var(--xm-c-dark);
   margin-bottom: 1rem;
-  line-height: 1.3334;
+  line-height: 1.35;
   code {
-    font-size: .875rem;
+    font-size: .85rem;
   }
   + * {
     margin-top: 0;

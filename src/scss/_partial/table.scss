@@ -3,9 +3,9 @@ table {
   margin-bottom: 2rem;
   width: 100%;
   table-layout: auto;
-  font-size: .875rem;
+  font-size: .85rem;
   text-align: left;
-  line-height: 1.7143;
+  line-height: 1.75;
 }
 thead {
   font-weight: 600;
@@ -14,9 +14,9 @@ thead {
   border-bottom-color: var(--xm-c-thead-border);
   th {
     vertical-align: bottom;
-    padding-right: .5714rem;
-    padding-bottom: .5714rem;
-    padding-left: .5714rem;
+    padding-right: .575rem;
+    padding-bottom: .575rem;
+    padding-left: .575rem;
     &:first-child {
       padding-left: 0;
     }
@@ -35,7 +35,7 @@ tbody {
   }
   td {
     vertical-align: top;
-    padding: .5714rem;
+    padding: .575rem;
     &:first-child {
       padding-left: 0;
     }
