@@ -23,10 +23,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      # Step IV
+      # Step III
       - name: Install Dependencies
         run: npm ci
-      # Step V
+      # Step IV
       - name: Lint
         run: npm run lint
   # Test Build
@@ -35,8 +35,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [ 16, 18, latest ]
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        node-version: [16, 18, latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
     steps:
       # Step I
