@@ -3,7 +3,8 @@ code {
   font-weight: 600;
   font-family: var(--xm-font-mono);
   color: var(--xm-c-dark);
-  &::before, &::after {
+  &::before,
+  &::after {
     content: '`';
   }
 }
@@ -26,9 +27,7 @@ pre {
     border-width: 0;
     border-radius: 0;
     line-height: inherit;
-    &::before {
-      content: none;
-    }
+    &::before,
     &::after {
       content: none;
     }
