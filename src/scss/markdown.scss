@@ -1,5 +1,5 @@
 .markdown-body {
-  font-family: var(--xm-font-sans) !important;
+  font-family: var(--xm-font-regular) !important;
   color: var(--xm-c-general);
   pre {
     &:not(.shiki, .highlight) {
@@ -12,7 +12,7 @@
   .highlight {
     margin: .5rem 0;
     font-size: 1.05rem;
-    font-family: var(--xm-font-mono) !important;
+    font-family: var(--xm-font-code) !important;
     line-height: 1.4;
     &.shiki-light {
       background: var(--xm-c-shiki-light) !important;
