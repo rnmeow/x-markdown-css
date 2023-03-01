@@ -1,8 +1,7 @@
 @use '_partial/container' as *;
 
-.markdown-body,
 .prose {
-  @extend %container;
+  @include container;
   @import '_partial/title';
   @import '_partial/text';
   @import '_partial/link';
