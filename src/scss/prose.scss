@@ -2,13 +2,5 @@
 
 .prose {
   @include container;
-  @import '_partial/title';
-  @import '_partial/text';
-  @import '_partial/link';
-  @import '_partial/code';
-  @import '_partial/quote';
-  @import '_partial/figure';
-  @import '_partial/list';
-  @import '_partial/table';
-  @import '_partial/media';
+  @import '_partial/all';
 }
