@@ -35,7 +35,7 @@ jobs:
           echo 'node_modules/' >> .gitignore
       # Step VI
       - name: Publish to NPM Registry
-        uses: JS-DevTools/npm-publish@v1
+        uses: rxfork/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
       # Step VII
