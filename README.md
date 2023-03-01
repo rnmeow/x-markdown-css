@@ -1,12 +1,12 @@
 <h1 align="center">x-markdown-css</h1>
 
-<center>
+<p align="center">
 
 [![Version](https://img.shields.io/npm/v/x-markdown-css.svg)](https://www.npmjs.com/package/x-markdown-css)
 [![Node.js Requirement](https://img.shields.io/badge/node-%3E%3D16-blue.svg)](https://github.com/kuohuanhuan/x-markdown-css/blob/master/package.json)
 [![MIT License](https://img.shields.io/github/license/kuohuanhuan/x-markdown-css)](https://github.com/kuohuanhuan/x-markdown-css/blob/master/LICENSE)
 
-</center>
+</p>
 
 > A simple and customizable Markdown CSS for everyone.
 
