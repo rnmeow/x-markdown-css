@@ -29,11 +29,16 @@ jobs:
       - name: Build Project
         run: npm run build
       # Step V
+      - name: Regenerate `.gitignore`
+        run: |
+          rm -f .gitignore
+          echo 'node_modules/' >> .gitignore
+      # Step VI
       - name: Publish to NPM Registry
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-      # Step VI
+      # Step VII
       - name: Generate Changelog
         run: npx changelogithub@0.12
         env:
