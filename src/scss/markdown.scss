@@ -54,11 +54,9 @@
         margin-bottom: 0;
       }
     }
-    p {
-      &:first-of-type::before {
-        content: none;
-      }
-      &:first-of-type::after {
+    p:first-of-type {
+      &::before,
+      &::after {
         content: none;
       }
     }
@@ -67,10 +65,8 @@
     margin-top: 1rem;
   }
 }
+html:not(.dark) .shiki-dark,
 .dark .shiki-light {
-  display: none;
-}
-html:not(.dark) .shiki-dark {
   display: none;
 }
 .item {
@@ -90,9 +86,7 @@ html:not(.dark) .shiki-dark {
   text-decoration: none;
   border: 0 !important;
   opacity: 0;
-  &:hover {
-    text-decoration: none;
-  }
+  &:hover,
   &:focus {
     text-decoration: none;
   }
