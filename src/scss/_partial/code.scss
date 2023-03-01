@@ -1,6 +1,7 @@
 code {
   font-size: .85rem;
   font-weight: 600;
+  font-family: var(--xm-font-mono);
   color: var(--xm-c-dark);
   &::before, &::after {
     content: '`';
