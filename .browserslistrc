@@ -1,4 +1,4 @@
 # Browserslist <https://browsersl.ist>
 
 defaults
-since 2015
+supports css-variables
