@@ -1,9 +1,9 @@
 @use 'sass:meta' as *;
 
-@use '_vars/constants';
-@use '_vars/colors';
-@use '_vars/light';
-@use '_vars/dark';
+@use 'variables/constants';
+@use 'variables/colors';
+@use 'variables/light';
+@use 'variables/dark';
 
 :root {
   @each $name, $val in module-variables('constants') {

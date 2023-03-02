@@ -1,6 +1,6 @@
-@use '_partial/container' as *;
+@use 'partial/container' as *;
 
 .prose {
   @include container;
-  @import '_partial/all';
+  @import 'partial/all';
 }
