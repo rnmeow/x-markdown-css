@@ -8,7 +8,7 @@
 
 </p>
 
-> A simple and customizable Markdown CSS for everyone.
+> A simple and customizable markdown CSS stylesheet for everyone.
 
 ## Requirement
 
