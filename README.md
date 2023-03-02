@@ -1,12 +1,12 @@
 <h1 align="center">x-markdown-css</h1>
 
-<p align="center">
+<center>
 
 [![Version](https://img.shields.io/npm/v/x-markdown-css.svg)](https://www.npmjs.com/package/x-markdown-css)
 [![Node.js Requirement](https://img.shields.io/badge/node-%3E%3D16-blue.svg)](https://github.com/kuohuanhuan/x-markdown-css/blob/master/package.json)
 [![MIT License](https://img.shields.io/github/license/kuohuanhuan/x-markdown-css)](https://github.com/kuohuanhuan/x-markdown-css/blob/master/LICENSE)
 
-</p>
+</center>
 
 > A simple and customizable markdown CSS stylesheet for everyone.
 
@@ -50,11 +50,11 @@ You can use the minified CSS file with a CDN service:
 
 ## Uses
 
-- [SCSS](https://sass-lang.com): CSS pre-processor.
-- [Stylelint](https://stylelint.io): Linting SCSS codes.
-- [Grunt](https://gruntjs.com): Automating build tasks.
-- [PostCSS](https://postcss.org): Transforming CSS dist.
-- [cssnano](https://cssnano.co): Compressing CSS dist.
+- [SCSS](https://sass-lang.com)
+- [Stylelint](https://stylelint.io)
+- [Grunt](https://gruntjs.com)
+- [PostCSS](https://postcss.org)
+- [cssnano](https://cssnano.co)
 
 *...and much more.*
 
