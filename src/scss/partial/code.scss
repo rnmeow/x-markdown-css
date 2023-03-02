@@ -2,7 +2,7 @@ code {
   color: var(--xm-c-dark);
   font-weight: 600;
   font-size: .875rem;
-  font-family: var(--xm-font-code);
+  font-family: var(--xm-font-mono);
   &::before,
   &::after {
     content: '`';
