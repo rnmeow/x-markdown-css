@@ -12,18 +12,30 @@
 
 ## Requirement
 
-- Node.js >=16
+- Node.js >= 16
 
 ## Install
 
 ```sh
-npm install
+npm i
 ```
 
 ## Build
 
 ```sh
 npm run build
+```
+
+or
+
+```sh
+grunt build
+```
+
+or
+
+```sh
+npx grunt build
 ```
 
 ## Usage
