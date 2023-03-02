@@ -29,17 +29,26 @@ jobs:
       - name: Build Project
         run: npm run build
       # Step V
+      - uses: vimtor/action-zip@v1
+        with:
+          files: dist/
+          dest: build.zip
+      # Step VI
       - name: Publish to NPM Registry
         uses: rxfork/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-      # Step VI
+      # Step VII
       - name: Generate Changelog
         run: npx changelogithub@0.12
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Step VII
+      # Step VIII
       - name: GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: dist/*
+          files: |
+            dist/*
+            build.zip
+
+# Authored by KuoHuanHuan.

@@ -54,3 +54,12 @@ jobs:
       # Step IV
       - name: Test Build
         run: npm run build
+      # Step V
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: built-on__os_${{ matrix.os }}__nodejs_${{ matrix.node-version }}
+          path: dist/
+          retention-days: 3
+
+# Authored by KuoHuanHuan.
