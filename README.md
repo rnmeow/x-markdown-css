@@ -39,9 +39,10 @@ You can use the minified CSS file with a CDN service:
 ## Uses
 
 - [SCSS](https://sass-lang.com): CSS pre-processor.
+- [Stylelint](https://stylelint.io): Linting SCSS codes.
 - [Grunt](https://gruntjs.com): Automating build tasks.
 - [PostCSS](https://postcss.org): Transforming CSS dist.
-- [Stylelint](https://stylelint.io): Linting SCSS codes.
+- [cssnano](https://cssnano.co): Compressing CSS dist.
 
 *...and much more.*
 
