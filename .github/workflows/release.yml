@@ -38,3 +38,8 @@ jobs:
         run: npx changelogithub@0.12
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Step VII
+      - name: GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*
