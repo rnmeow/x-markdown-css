@@ -1,12 +1,10 @@
 .markdown-body {
   color: var(--xm-c-general);
   font-family: var(--xm-font-display) !important;
-  pre {
-    &:not(.shiki, .highlight) {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-    }
+  pre:not(.shiki, .highlight) {
+    margin: 0;
+    padding: 0;
+    background: transparent;
   }
   .shiki,
   .highlight {
@@ -81,7 +79,7 @@ html:not(.dark) .shiki-dark,
 .header-anchor {
   float: left;
   margin-top: .125rem;
-  margin-left: -1.2rem;
+  margin-left: -1.25rem;
   padding-right: .5rem;
   border: 0 !important;
   font-size: .875rem;
@@ -92,16 +90,13 @@ html:not(.dark) .shiki-dark,
     text-decoration: none;
   }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  &:hover,
-  &:focus {
-    .header-anchor {
-      opacity: .5;
+@for $i from 1 through 6 {
+  h#{$i} {
+    &:hover,
+    &:focus {
+      .header-anchor {
+        opacity: .5;
+      }
     }
   }
 }
