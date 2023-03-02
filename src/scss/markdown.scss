@@ -1,6 +1,6 @@
 .markdown-body {
-  font-family: var(--xm-font-regular) !important;
   color: var(--xm-c-general);
+  font-family: var(--xm-font-regular) !important;
   pre {
     &:not(.shiki, .highlight) {
       margin: 0;
@@ -25,9 +25,9 @@
     width: 100%;
   }
   a {
+    border-bottom: 1px solid var(--xm-c-link-border);
     font-weight: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--xm-c-link-border);
     transition: border .3s ease-in-out;
     &:hover {
       border-bottom: 1px solid var(--xm-c-general);
@@ -37,8 +37,8 @@
     }
   }
   hr {
-    margin: 2rem auto;
     width: 50px;
+    margin: 2rem auto;
   }
   blockquote,
   q {
@@ -83,9 +83,9 @@ html:not(.dark) .shiki-dark,
   margin-top: .125rem;
   margin-left: -1.2rem;
   padding-right: .5rem;
-  font-size: .85rem;
-  text-decoration: none;
   border: 0 !important;
+  font-size: .875rem;
+  text-decoration: none;
   opacity: 0;
   &:hover,
   &:focus {

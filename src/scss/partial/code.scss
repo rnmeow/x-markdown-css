@@ -1,8 +1,8 @@
 code {
-  font-size: .85rem;
-  font-weight: 600;
-  font-family: var(--xm-font-code);
   color: var(--xm-c-dark);
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: var(--xm-font-code);
   &::before,
   &::after {
     content: '`';
@@ -11,21 +11,21 @@ code {
 pre {
   overflow-x: auto;
   margin-top: 1.75rem;
-  padding-top: .85rem, 1.15rem;
-  font-size: .85rem;
-  color: var(--xm-c-pre);
-  line-height: 1.75;
   margin-bottom: 1.75rem;
+  padding-top: .875rem, 1.15rem;
   border-radius: .375rem;
+  color: var(--xm-c-pre);
+  font-size: .875rem;
+  line-height: 1.75;
   code {
     padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: 400;
-    color: inherit;
-    background: transparent;
     border-width: 0;
     border-radius: 0;
+    background: transparent;
+    color: inherit;
+    font-weight: 400;
+    font-size: inherit;
+    font-family: inherit;
     line-height: inherit;
     &::before,
     &::after {

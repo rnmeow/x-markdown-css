@@ -13,8 +13,8 @@ ol {
       content: counter(list-item, decimal) '.';
       position: absolute;
       left: 0;
-      font-weight: 400;
       color: var(--xm-c-ol-counter);
+      font-weight: 400;
     }
   }
 }
@@ -28,12 +28,12 @@ ul {
     &::before {
       content: '';
       position: absolute;
-      top: .685rem;
+      top: .675rem;
       left: .25rem;
       width: .375rem;
       height: .375rem;
-      background-color: var(--xm-c-ul-counter);
       border-radius: 50%;
+      background-color: var(--xm-c-ul-counter);
     }
   }
 }

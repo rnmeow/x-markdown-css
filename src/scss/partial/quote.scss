@@ -3,10 +3,10 @@ q {
   margin-top: 1.65rem;
   margin-bottom: 1.65rem;
   padding-left: 1rem;
+  border-left: .25rem solid var(--xm-c-blockquote-border);
+  color: inherit;
   font-weight: 500;
   font-style: italic;
-  color: inherit;
-  border-left: .25rem solid var(--xm-c-blockquote-border);
   quotes: '\201C''\201D''\2018''\2019';
   p {
     &:first-of-type::before {

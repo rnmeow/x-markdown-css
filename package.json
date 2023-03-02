@@ -51,8 +51,8 @@
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.1",
     "stylelint": "^15.2.0",
+    "stylelint-config-hudochenkov": "^9.0.0",
     "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-order": "^6.0.2",
     "stylelint-scss": "^4.4.0"
   }
 }
