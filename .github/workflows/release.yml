@@ -29,7 +29,8 @@ jobs:
       - name: Build Project
         run: npm run build
       # Step V
-      - uses: vimtor/action-zip@v1
+      - name: Create Zip File
+        uses: vimtor/action-zip@v1.1
         with:
           files: dist/
           dest: build.zip
