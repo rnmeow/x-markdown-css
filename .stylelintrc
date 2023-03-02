@@ -4,8 +4,7 @@
     "stylelint-config-standard-scss",
     "stylelint-config-hudochenkov/order"
   ],
-  "plugins": ["stylelint-scss"]
-  ,
+  "plugins": ["stylelint-scss"],
   "rules": {
     "alpha-value-notation": "number",
     "at-rule-empty-line-before": null,
