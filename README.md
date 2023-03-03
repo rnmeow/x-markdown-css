@@ -10,37 +10,9 @@
 
 > A simple and customizable markdown CSS stylesheet for everyone.
 
-## Requirement
-
-- Node.js >= 16
-
 ## Browsers Support
 
 According to [.browserslistrc](https://github.com/kuohuanhuan/x-markdown-css/blob/master/.browserslistrc), `x-markdown-css` supports **all browsers support CSS variables.**
-
-## Install
-
-```sh
-npm i
-```
-
-## Build
-
-```sh
-npm run build
-```
-
-or
-
-```sh
-grunt build
-```
-
-or
-
-```sh
-npx grunt build
-```
 
 ## Usage
 
@@ -79,6 +51,36 @@ Then, add it to your Sass / SCSS file (SCSS for example):
 - [cssnano](https://cssnano.co)
 
 *...and much more.*
+
+## Development
+
+### Requirement
+
+- Node.js >= 16
+
+### Install
+
+```sh
+npm i
+```
+
+### Build
+
+```sh
+npm run build
+```
+
+or
+
+```sh
+grunt build
+```
+
+or
+
+```sh
+npx grunt build
+```
 
 ## Contributing
 
