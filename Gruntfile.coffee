@@ -29,7 +29,10 @@ module.exports = (grunt) ->
       exp:
         options:
           processors: [
-            require('postcss-preset-env')()
+            require('postcss-preset-env')(
+              features:
+                'custom-properties': false
+            )
             require('autoprefixer')()
           ]
         src: 'dist/bundle.css'
@@ -37,7 +40,10 @@ module.exports = (grunt) ->
       min:
         options:
           processors: [
-            require('postcss-preset-env')()
+            require('postcss-preset-env')(
+              features:
+                'custom-properties': false
+            )
             require('autoprefixer')()
             require('cssnano')(preset: 'default')
           ]
