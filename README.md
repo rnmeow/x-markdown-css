@@ -14,6 +14,10 @@
 
 - Node.js >= 16
 
+## Browsers Support
+
+According to [.browserslistrc](https://github.com/kuohuanhuan/x-markdown-css/blob/master/.browserslistrc), `x-markdown-css` supports **all browsers support CSS variables.**
+
 ## Install
 
 ```sh
