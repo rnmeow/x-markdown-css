@@ -65,7 +65,7 @@ jobs:
             dist/*
             build.zip
       - name: Add Latest Tag
-        uses: cardinalby/git-tag-action@v1
+        uses: cardinalby/git-tag-action@master
         env:
           TAG: Latest
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
