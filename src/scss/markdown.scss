@@ -95,7 +95,7 @@ html:not(.dark) .shiki-dark,
     &:hover,
     &:focus {
       .header-anchor {
-        opacity: .5;
+        opacity: .35 + $i * .025;
       }
     }
   }
