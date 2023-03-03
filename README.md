@@ -44,7 +44,7 @@ npx grunt build
 
 ## Usage
 
-You can use the minified CSS file with:
+You can use `x-markdown-css` with:
 
 1. A CDN service:
 
