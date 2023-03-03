@@ -8,7 +8,7 @@ on:
 jobs:
   # NPM Registry & GitHub Release
   release:
-    # Use Ubuntu 22.04
+    # Use Ubuntu 22.04 LTS
     runs-on: ubuntu-22.04
     steps:
       # Step I

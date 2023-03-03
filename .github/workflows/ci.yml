@@ -11,7 +11,7 @@ on:
 jobs:
   # Test Lint
   lint:
-    # Use Ubuntu 22.04
+    # Use Ubuntu 22.04 LTS
     runs-on: ubuntu-22.04
     steps:
       # Step I
