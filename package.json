@@ -16,7 +16,8 @@
     "article",
     "documentation"
   ],
-  "main": "index.js",
+  "sass": "src/index.scss",
+  "style": "dist/bundle.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuohuanhuan/x-markdown-css.git"
