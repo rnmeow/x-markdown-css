@@ -33,7 +33,7 @@ jobs:
         uses: TheDoctor0/zip-release@0.7.1
         with:
           type: tar
-          path: dist/
+          path: dist/*
           filename: build.tar.gz
       # Step VI
       - name: Publish to NPM Registry
