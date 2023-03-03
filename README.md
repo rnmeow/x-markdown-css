@@ -44,13 +44,31 @@ npx grunt build
 
 ## Usage
 
-You can use the minified CSS file with a CDN service:
+You can use the minified CSS file with:
+
+1. A CDN service:
 
 - UNPKG: `https://unpkg.com/x-markdown-css@latest/dist/bundle.min.css`
 - jsDelivr: `https://fastly.jsdelivr.net/npm/x-markdown-css@latest/dist/bundle.min.css`
 - CDNJS: *Coming soon. **Waiting for you to make `x-markdown-css` [popular enough](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md#policy-rules-and-guidelines)**!*
 
 > *ps. `bundle.css` without `.min` stands for unminified version.*
+
+2. A Sass / SCSS project
+
+First, install it with NPM ([PNPM](https://pnpm.io) or [Yarn](https://yarnpkg.com) also works):
+
+```sh
+npm i x-markdown-css@latest
+```
+
+Then, add it to your Sass / SCSS file (SCSS for example):
+
+```scss
+@import 'x-markdown-css';
+```
+
+> *ps. No path or file extention is required, just simply use `x-markdown-css` to import it.*
 
 ## Uses
 
