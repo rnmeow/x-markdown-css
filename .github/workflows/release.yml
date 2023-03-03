@@ -30,7 +30,7 @@ jobs:
         run: npm run build
       # Step V
       - name: Create tar.gz File
-        uses: TheDoctor0/zip-release@latest
+        uses: TheDoctor0/zip-release@0.7.1
         with:
           type: tar
           path: dist/
@@ -47,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Step VIII
       - name: GitHub Release
-        uses: marvinpinto/action-automatic-releases@v1
+        uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
