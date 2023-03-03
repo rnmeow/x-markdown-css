@@ -47,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Step VIII
       # - Pre-release
-      - name: GitHub Release
+      - name: GitHub Release (pre-release)
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, '-')
         uses: softprops/action-gh-release@v1
         with:
@@ -56,7 +56,7 @@ jobs:
             dist/*
             build.tar.gz
       # - Release
-      - name: GitHub Release
+      - name: GitHub Release (release)
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, '-') == false
         uses: softprops/action-gh-release@v1
         with:
