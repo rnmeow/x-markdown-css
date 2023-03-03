@@ -54,3 +54,5 @@ module.exports = (grunt) ->
     'sass'
     'postcss'
   ]
+
+# Authored by @kuohuanhuan.
