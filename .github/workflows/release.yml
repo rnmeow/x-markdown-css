@@ -46,18 +46,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Step VIII
-      # - Pre-release
+      # / pre-release
       - name: GitHub Release (pre-release)
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, '-')
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains('-')
         uses: softprops/action-gh-release@v1
         with:
           prerelease: true
           files: |
             dist/*
             build.tar.gz
-      # - Release
+      # / release
       - name: GitHub Release (release)
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains(github.ref, '-') == false
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && contains('-') == false
         uses: softprops/action-gh-release@v1
         with:
           prerelease: false
