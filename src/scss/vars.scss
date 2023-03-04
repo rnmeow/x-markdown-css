@@ -2,8 +2,9 @@
 
 @use 'variables/constants';
 @use 'variables/colors';
-@use 'variables/light';
-@use 'variables/dark';
+
+@use 'variables/modes/light';
+@use 'variables/modes/dark';
 
 :root {
   @each $name, $val in module-variables('constants') {
