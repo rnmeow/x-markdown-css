@@ -20,13 +20,13 @@ You can use `x-markdown-css` with:
 
 1. A CDN service:
 
-- UNPKG: `https://unpkg.com/x-markdown-css@latest/dist/bundle.min.css`
-- jsDelivr: `https://fastly.jsdelivr.net/npm/x-markdown-css@latest/dist/bundle.min.css`
+- UNPKG: `https://unpkg.com/x-markdown-css`
+- jsDelivr: `https://fastly.jsdelivr.net/npm/x-markdown-css`
 - CDNJS: *Coming soon. **Waiting for you to make `x-markdown-css` [popular enough](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md#policy-rules-and-guidelines)**!*
 
 > *ps. Note that `bundle.css` without `.min` stands for unminified version.*
 
-2. A CSS (with Node.js) / Sass / SCSS project:
+1. A CSS (with Node.js) / Sass / SCSS project:
 
 First, install it with NPM ([PNPM](https://pnpm.io) or [Yarn](https://yarnpkg.com) also works):
 
