@@ -42,7 +42,9 @@ Then, add it to your Sass / SCSS file (SCSS for example):
 
 > *ps. No path or file extention is required, just simply use `x-markdown-css` to import it.*
 
-## Uses
+## Built with
+
+The following tools and suite libraries made the development of `x-markdown-css` possible:
 
 - [SCSS](https://sass-lang.com)
 - [Stylelint](https://stylelint.io)
