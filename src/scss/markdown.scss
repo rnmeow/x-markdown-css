@@ -1,5 +1,5 @@
 .markdown-body {
-  color: var(--xm-c-general);
+  color: var(--xm-c-regular);
   font-family: var(--xm-font-display) !important;
   pre:not(.shiki, .highlight) {
     margin: 0;
@@ -28,7 +28,7 @@
     text-decoration: none;
     transition: border .3s ease-in-out;
     &:hover {
-      border-bottom: 1px solid var(--xm-c-general);
+      border-bottom: 1px solid var(--xm-c-regular);
     }
     code {
       color: inherit;
