@@ -24,9 +24,9 @@ You can use `x-markdown-css` with:
 - jsDelivr: `https://fastly.jsdelivr.net/npm/x-markdown-css@latest/dist/bundle.min.css`
 - CDNJS: *Coming soon. **Waiting for you to make `x-markdown-css` [popular enough](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md#policy-rules-and-guidelines)**!*
 
-> *ps. `bundle.css` without `.min` stands for unminified version.*
+> *ps. Note that `bundle.css` without `.min` stands for unminified version.*
 
-2. A Sass / SCSS project
+2. A CSS (with Node.js) / Sass / SCSS project:
 
 First, install it with NPM ([PNPM](https://pnpm.io) or [Yarn](https://yarnpkg.com) also works):
 
@@ -34,13 +34,17 @@ First, install it with NPM ([PNPM](https://pnpm.io) or [Yarn](https://yarnpkg.co
 npm i x-markdown-css@latest
 ```
 
-Then, add it to your Sass / SCSS file (SCSS for example):
+Then, add it to your `.css` / `.sass` / `.scss` file.
 
-```scss
+For example, in CSS / SCSS you do:
+
+```css
 @import 'x-markdown-css';
 ```
 
-> *ps. No path or file extention is required, just simply use `x-markdown-css` to import it.*
+> *ps. Note that no path or file extention is required
+> since the `style` and `sass` field in `package.json` is filled.  
+> Just simply use `'x-markdown-css'` to import it.*
 
 ## Built with
 
