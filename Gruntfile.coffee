@@ -1,7 +1,6 @@
 module.exports = (grunt) ->
   # Load Grunt Tasks
   require('load-grunt-tasks') grunt
-
   # Project Configuration
   grunt.initConfig
     # NPM Package Declare
