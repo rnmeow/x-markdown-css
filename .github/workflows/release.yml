@@ -8,8 +8,8 @@ on:
 jobs:
   # NPM Registry & GitHub Release
   release:
-    # Use Ubuntu 22.04 LTS
-    runs-on: ubuntu-22.04
+    # Use Windows Server 2022
+    runs-on: windows-2022
     steps:
       # Step I
       - name: Get Source Code
