@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - src/**.scss
+      - package.json
+      - Gruntfile.coffee
+      - .stylelintrc
+      - .stylelintignore
   pull_request:
     branches:
       - master
