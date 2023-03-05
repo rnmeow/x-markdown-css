@@ -14,35 +14,9 @@
 
 According to [.browserslistrc](https://github.com/kuohuanhuan/x-markdown-css/blob/master/.browserslistrc), `x-markdown-css` supports **all browsers support CSS variables.**
 
-## Usage
+## Get Started
 
-You can use `x-markdown-css` with:
-
-1. A CDN service:
-
-- UNPKG: `https://unpkg.com/x-markdown-css@latest`
-- jsDelivr: `https://fastly.jsdelivr.net/npm/x-markdown-css@latest`
-- CDNJS: *Coming soon. **Waiting for you to make `x-markdown-css` [popular enough](https://github.com/cdnjs/packages/blob/master/CONTRIBUTING.md#policy-rules-and-guidelines)**!*
-
-2. A CSS (with Node.js) / Sass / SCSS project:
-
-First, install it with NPM ([PNPM](https://pnpm.io) or [Yarn](https://yarnpkg.com) also works):
-
-```sh
-npm i x-markdown-css@latest
-```
-
-Then, add it to your `.css` / `.sass` / `.scss` file.
-
-For example, in CSS / SCSS you do:
-
-```css
-@import 'x-markdown-css';
-```
-
-> *ps. Note that no path or file extention is required
-> since the `style` and `sass` field in `package.json` is filled.  
-> Just simply use `'x-markdown-css'` to import it.*
+Visit the [Wiki](https://github.com/kuohuanhuan/x-markdown-css/wiki) page for more information.
 
 ## Built with
 
