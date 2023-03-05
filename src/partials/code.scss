@@ -32,21 +32,10 @@ pre {
       content: none;
     }
   }
-  &:not(.shiki) {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-  }
 }
 .shiki {
   margin: .5rem 0;
   font-size: 1.05rem;
   font-family: var(--xm-font-code) !important;
   line-height: 1.4;
-  &.shiki-light {
-    background: var(--xm-c-shiki-light) !important;
-  }
-  &.shiki-dark {
-    background: var(--xm-c-shiki-dark) !important;
-  }
 }
