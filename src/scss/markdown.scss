@@ -1,13 +1,12 @@
 .markdown-body {
   color: var(--xm-c-regular);
   font-family: var(--xm-font-display) !important;
-  pre:not(.shiki, .highlight) {
+  pre:not(.shiki) {
     margin: 0;
     padding: 0;
     background: transparent;
   }
-  .shiki,
-  .highlight {
+  .shiki {
     margin: .5rem 0;
     font-size: 1.05rem;
     font-family: var(--xm-font-code) !important;
