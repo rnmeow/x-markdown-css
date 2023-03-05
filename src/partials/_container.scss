@@ -2,5 +2,9 @@
   max-width: fit-content;
   color: var(--xm-c-regular);
   font-size: 1rem;
+  font-family: var(--xm-font-display) !important;
   line-height: 1.75;
+  &:first-child {
+    margin-top: 1rem;
+  }
 }

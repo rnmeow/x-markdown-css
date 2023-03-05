@@ -2,7 +2,7 @@
 
 @use 'partials/container';
 
-.prose {
+.markdown-body {
   @include container.container;
   @include meta.load-css('partials/all');
 }

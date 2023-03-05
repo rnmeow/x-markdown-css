@@ -2,18 +2,28 @@ blockquote,
 q {
   margin-top: 1.65rem;
   margin-bottom: 1.65rem;
-  padding-left: 1rem;
+  padding: .6rem 1.2rem;
   border-left: .25rem solid var(--xm-c-quote-border);
   color: inherit;
   font-weight: 500;
   font-style: italic;
+  line-height: 1.5rem;
   quotes: '\201C''\201D''\2018''\2019';
+  opacity: .8;
   p {
     &:first-of-type::before {
       content: open-quote;
     }
     &:last-of-type::after {
       content: close-quote;
+    }
+  }
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

@@ -55,10 +55,35 @@ h6 {
   opacity: .5;
 }
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  width: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-color: var(--xm-c-hr-border);
   + * {
     margin-top: 0;
+  }
+}
+.header-anchor {
+  float: left;
+  margin-top: .125rem;
+  margin-left: -1.25rem;
+  padding-right: .5rem;
+  border: 0 !important;
+  font-size: .875rem;
+  text-decoration: none;
+  opacity: 0;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+@for $i from 1 through 6 {
+  h#{$i} {
+    &:hover,
+    &:focus {
+      .header-anchor {
+        opacity: .35 + $i * .025;
+      }
+    }
   }
 }

@@ -1,0 +1,13 @@
+a {
+  border-bottom: 1px solid var(--xm-c-link-border);
+  color: var(--xm-c-deeper);
+  font-weight: 500;
+  text-decoration: none;
+  transition: border .3s ease-in-out;
+  code {
+    color: var(--xm-c-code);
+  }
+  &:hover {
+    border-bottom: 1px solid var(--xm-c-regular);
+  }
+}
