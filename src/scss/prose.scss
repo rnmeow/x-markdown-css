@@ -1,6 +1,8 @@
-@use 'partials/container' as *;
+@use 'sass:meta';
+
+@use 'partials/container';
 
 .prose {
-  @include container;
-  @import 'partials/all';
+  @include container.container;
+  @include meta.load-css('partials/all');
 }
