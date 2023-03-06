@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: lts/*
           registry-url: https://registry.npmjs.com
       # Step III
       - name: Install Dependencies
@@ -41,7 +41,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [16, 18, lts/*, latest]
+        node-version: [16, 18, latest]
         os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
     steps:
