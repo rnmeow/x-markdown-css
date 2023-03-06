@@ -23,7 +23,11 @@
     "type": "git",
     "url": "git+https://github.com/kuohuanhuan/x-markdown-css.git"
   },
-  "author": "kuohuanhuan",
+  "author": {
+    "name": "kuohuanhuan",
+    "email": "hi@nekohuan.cyou",
+    "url": "https://nekohuan.cyou"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kuohuanhuan/x-markdown-css/issues"
