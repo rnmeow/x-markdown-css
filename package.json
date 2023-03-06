@@ -47,6 +47,7 @@
     "sass": "^1.58.3"
   },
   "devDependencies": {
+    "@kuohuanhuan/stylelint-config": "^0.0.3",
     "@lodder/grunt-postcss": "^3.1.1",
     "autoprefixer": "^10.4.13",
     "bumpp": "^9.0.0",
@@ -56,9 +57,6 @@
     "load-grunt-tasks": "^5.1.0",
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.1",
-    "stylelint": "^15.2.0",
-    "stylelint-config-hudochenkov": "^9.0.0",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-scss": "^4.4.0"
+    "stylelint": "^15.2.0"
   }
 }
