@@ -1,16 +1,11 @@
 @use 'sass:meta';
 @use 'variables/constants';
-@use 'variables/colors';
 @use 'variables/modes/light';
 @use 'variables/modes/dark';
 
 :root {
   @each $name, $val in meta.module-variables('constants') {
     --xm-#{$name}: #{$val};
-  }
-
-  @each $name, $val in meta.module-variables('colors') {
-    --xm-c-#{$name}: #{$val};
   }
 }
 
