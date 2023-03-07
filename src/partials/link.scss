@@ -5,9 +5,15 @@ a {
   text-decoration: none;
   transition: border .3s ease-in-out;
   code {
-    color: inherit;
+    color: var(--xm-c-deep);
   }
   &:hover {
     border-bottom: 1px solid var(--xm-c-regular);
+  }
+  &:not([href]) {
+    color: inherit;
+    font-weight: normal;
+    transition: none;
+    border-bottom: none;
   }
 }
