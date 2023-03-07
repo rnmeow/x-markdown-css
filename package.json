@@ -1,6 +1,6 @@
 {
   "name": "x-markdown-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple and customizable markdown CSS stylesheet for everyone.",
   "keywords": [
     "markdown",
@@ -44,10 +44,11 @@
   },
   "dependencies": {
     "coffeescript": "^2.7.0",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "x-markdown-css": "^0.1.0"
   },
   "devDependencies": {
-    "@kuohuanhuan/stylelint-config": "^0.0.3",
+    "@kuohuanhuan/stylelint-config": "^0.0.4",
     "@lodder/grunt-postcss": "^3.1.1",
     "autoprefixer": "^10.4.13",
     "bumpp": "^9.0.0",
