@@ -44,8 +44,7 @@
   },
   "dependencies": {
     "coffeescript": "^2.7.0",
-    "sass": "^1.58.3",
-    "x-markdown-css": "^0.1.0"
+    "sass": "^1.58.3"
   },
   "devDependencies": {
     "@kuohuanhuan/stylelint-config": "^0.0.4",
