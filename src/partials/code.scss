@@ -33,4 +33,10 @@ pre {
       content: none;
     }
   }
+  &:has(code) {
+    margin: .5rem 0;
+    font-size: 1.05rem;
+    font-family: var(--xm-font-code);
+    line-height: 1.4;
+  }
 }
