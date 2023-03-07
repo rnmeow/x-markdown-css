@@ -11,9 +11,9 @@ a {
     border-bottom: 1px solid var(--xm-c-regular);
   }
   &:not([href]) {
+    border-bottom: none;
     color: inherit;
     font-weight: normal;
     transition: none;
-    border-bottom: none;
   }
 }
