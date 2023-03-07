@@ -71,11 +71,12 @@ hr {
 
 .header-anchor {
   float: left;
-  margin-top: .125rem;
+  margin-top: 0;
   margin-left: -1.25rem;
   padding-right: .5rem;
   border: 0 !important;
-  font-size: .875rem;
+  font-weight: 600;
+  font-size: inherit;
   text-decoration: none;
   opacity: 0;
   &:hover,
