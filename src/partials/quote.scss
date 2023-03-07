@@ -9,7 +9,7 @@ q {
   font-style: italic;
   line-height: 1.5rem;
   quotes: '\201C''\201D''\2018''\2019';
-  opacity: .8;
+  opacity: .75;
   p {
     &:first-of-type::before {
       content: open-quote;
