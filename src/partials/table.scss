@@ -8,10 +8,10 @@ table {
     padding: 6px 13px;
     border: 1.5px solid var(--xm-c-border-rev);
   }
-  thead > tr > th {
+  thead th {
     font-weight: 700;
   }
-  tbody > tr {
+  tbody tr {
     &:hover {
       background-color: var(--xm-c-shallowest);
     }
