@@ -1,5 +1,9 @@
 <h1 align="center">x-markdown-css</h1>
 
+> [!IMPORTANT]  
+> I am working on a new CSS styling library, so `x-markdown-css` is deprecated.  
+> PS. Sass dev team supports Palestine Hamas. **I am dropping it.**
+
 <center>
 
 [![NPM Version](https://img.shields.io/npm/v/x-markdown-css)](https://www.npmjs.com/package/x-markdown-css)
